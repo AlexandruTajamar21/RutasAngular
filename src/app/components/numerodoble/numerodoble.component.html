@@ -1,0 +1,11 @@
+<hr>
+<button (click)="redirect(66)">Enviar 66</button>
+<button (click)="redirect(88)">Enviar 88</button>
+<button (click)="redirect(99)">Enviar 99</button>
+<hr>
+<div *ngIf="numero">
+    <h1>El dobre del numero: {{numero}} es <span style="color: red">{{doble}}</span></h1>
+</div>
+<div *ngIf="!numero">
+    <h1 style="color: red"> No se ha recibido numero</h1>
+</div>
